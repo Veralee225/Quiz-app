@@ -169,10 +169,8 @@ const questions = [
              {options: "April 1983", correct: false},
              {options: "May 1967", correct: true},
              {options: "September 1960", correct: false},
-
-
         ]
-}
+},
     
     { 
         question: "Which Queen Of England Was Known As Bloody Mary?", 
@@ -184,9 +182,9 @@ const questions = [
             {option: "Mary IV",  correct: false}
         ]  
 
-    },
+},
 
-    
+
     { 
         question: "Who was the first democratic president in Nigeria?",
 
