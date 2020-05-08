@@ -34,6 +34,7 @@ function startGame() {
 
 function setNextQuestion() {
     resetState()
+    console.log('test')
     showQuestion(shuffledQuestions[currentQuestionIndex])
     if(shuffledQuestions.length <= currentQuestionIndex + 1){
         nextButton.classList.add('hide')
@@ -50,14 +51,15 @@ function showQuestion(question) {
         if (answer.correct) {
            button.dataset.correct = answer.correct 
         }
-        button.addEventListener('click',selectAnswer)
+        button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
     })
     counter.innerText = `Q: ${(currentQuestionIndex + 1)} /5 `
 }
 
 function resetState() {
-    while (answerButtonsElement.firstchild) {
+    console.log('enter')
+    while (answerButtonsElement.firstChild){
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
         console.log('done')
     }
@@ -81,11 +83,9 @@ function selectAnswer(e) {
 }
 
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
     if (correct) {
+        element.classList.remove('wrong')
         element.classList.add('correct')
-    }   else {
-        element.classList.add('wrong')
     }
 }
 
