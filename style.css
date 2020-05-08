@@ -1,0 +1,135 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: sandybrown;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2 auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.score-board {
+    display: flex;
+    padding: 1em;
+}
+
+.score {
+    margin-left: auto;
+}
+
+.btn {
+    --hue: var(--hue-nuetral):
+    border: 1px solid hsl(var(--hue), 100%, 50%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+}
+
+.btn:hover {
+    border-radius: black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black; 
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 350px) {
+    .score-board {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .score {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 300px) and (orientation: landscape) {
+    .start-btn, .next-btn {
+        font-size: 1rem;
+        padding: 5px 30px;
+    }
+    .score-board {
+        display: flex;
+        padding: 0 1em;
+    }
+
+    .btn-grid {
+        margin-left: 10px 0;
+    }
+}
+
