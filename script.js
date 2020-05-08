@@ -134,6 +134,8 @@ const questions = [
     },
 
 
+
+
     {   
         question: `When was the first olympics?`,
         answers:  [
@@ -144,6 +146,7 @@ const questions = [
         ]
         
     },
+
 
     
     { 
@@ -159,6 +162,17 @@ const questions = [
 
     },
 
+{
+       "question": When was Lagos state founded?",
+        answers: [
+             {options: "June 1967", correct: false},
+             {options: "April 1983", correct: false},
+             {options: "May 1967", correct: true},
+             {options: "September 1960", correct: false},
+
+
+        ]
+}
     
     { 
         question: "Which Queen Of England Was Known As Bloody Mary?", 
