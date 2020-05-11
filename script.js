@@ -159,20 +159,7 @@ const questions = [
 
     },
 
-
-     {
-
-       question: "When was Lagos state founded?",
-
-        answers: [
-             {options: "June 1967", correct: false},
-             {options: "April 1983", correct: false},
-             {options: "May 1967", correct: true},
-             {options: "September 1960", correct: false}
-        ]
-   },
-
-
+    
     { 
         question: "Which Queen Of England Was Known As Bloody Mary?", 
 
@@ -184,6 +171,18 @@ const questions = [
         ]  
 
     },
+    
+     {
+        question: "When did the first world war take place?",
+
+        answers: [
+             {option: "1912", correct: false},
+             {option: "1910", correct: false},
+             {option: "1914", correct: true},
+             {option: "1920", correct: false},
+        ]
+
+      },
 
     
     { 
