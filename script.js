@@ -162,7 +162,7 @@ const questions = [
 
      {
 
-       "question": When was Lagos state founded?",
+       question: "When was Lagos state founded?",
 
         answers: [
              {options: "June 1967", correct: false},
