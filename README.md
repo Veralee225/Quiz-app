@@ -1,5 +1,5 @@
 # Quiz-app
-A task was given to build a responsive quiz app at the Start.Ng Internship. I used Html, Css and Javascript to build it.
+A task was given to build a responsive quiz app at the Start.Ng Internship. Html, Css and Javascript was used to build it.
 
 Live Site - https://veralee225.github.io/Quiz-app/
 
